@@ -1,0 +1,18 @@
+.filterInput {
+  width: 120px;
+  margin-top: 5px;
+  outline: none;
+}
+
+.filterInput:focus {
+  border: 2px solid blue;
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 0px 20px;
+}
