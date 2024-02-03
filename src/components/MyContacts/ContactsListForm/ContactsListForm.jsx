@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { nanoid } from 'nanoid';
 
 import styles from './contacts-list-form.module.css';
@@ -25,8 +25,8 @@ const ContactListForm = ({ onSubmit }) => {
     setState({ ...INITIAL_STATE });
   };
 
-  const phonebookNameId = nanoid();
-  const phonebookNumberId = nanoid();
+  const phonebookNameId = useMemo(() => nanoid(), []);
+  const phonebookNumberId = useMemo(() => nanoid(), []);
 
   const { name, number } = state;
 
